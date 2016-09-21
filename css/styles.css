@@ -1,0 +1,273 @@
+@charset "utf-8";
+/*
+Theme Name: tortuguero water taxy
+Description:
+Version: 1.0
+Author: Mario Gomez
+Author URI:
+License:
+License URI:
+Text Domain: not assigned
+*/
+/*CSS RESETS
+body, body * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}*/
+html {
+    height: 100%;
+    font-size:16px;
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body {
+    box-sizing: border-box;
+    background:white;
+    font-size:100%;
+    line-height:1.5;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#logo-main {
+    display: block;
+    margin: 5px auto;
+    width: 50%;
+}
+/*CSS Typer*/
+@keyframes cursor {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+@keyframes typing {
+    from {
+        width: 100%;
+    }
+    90%, to {
+        width: 0;
+    }
+}
+@keyframes slide {
+    33.33333% {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    to {
+        font-size: 0;
+        letter-spacing: 0;
+    }
+}
+.typing-slider {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.typing-slider p {
+    position: relative;
+    display: inline;
+    font-size: 0;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    animation: slide 15s step-start infinite;
+}
+.typing-slider p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 3px solid black;
+    background-color: #f8f8f8;
+    animation: typing 5s infinite, cursor 1s infinite;
+}
+.typing-slider p:nth-child(1) {
+    animation-delay: 0s;
+}
+.typing-slider p:nth-child(1)::after {
+    animation-delay: 0s;
+    animation-timing-function: steps(16), step-end;
+}
+.typing-slider p:nth-child(2) {
+    animation-delay: 5s;
+}
+.typing-slider p:nth-child(2)::after {
+    animation-delay: 5s;
+    animation-timing-function: steps(23), step-end;
+}
+.typing-slider p:nth-child(3) {
+    animation-delay: 10s;
+}
+.typing-slider p:nth-child(3)::after {
+    animation-delay: 10s;
+    animation-timing-function: steps(12), step-end;
+}
+/*CSS flags*/
+#eng_left {
+    float: left;
+    width: 45%;
+}
+#spa_right {
+    float: right;
+    width: 45%;
+}
+.img_es {
+    float: left;
+    width: 90%;
+    padding-bottom: 2em;
+}
+.img_us {
+    float: right;
+    width: 90%;
+    padding-bottom: 2em;
+}
+/*CSS Footer*/
+.footer-top {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background: #2d00ff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d00ff), color-stop(100%, #2d00ff));
+    background: -webkit-linear-gradient(top, #2d00ff 0%, ##2d00ff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#2d00ff), to(#2d00ff));
+    background: linear-gradient(to bottom, #2d00ff 0%, #2d00ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#157dd4', endColorstr='#1060a3',GradientType=0 );
+}
+.footer-top p, .footer-top p a {
+    font-family: 'arial';
+    color: #fff;
+    text-decoration: none;
+    line-height: 80px;
+    margin:0px 10px;
+}
+.footer-bottom {
+    font-family: 'arial';
+    width: 100%;
+    height: 40px;
+    background-color: 	#ff3000;
+    line-height: 40px;
+    text-align: center;
+}
+.footer-bottom p, .footer-bottom p a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    margin:0px 5px;
+}
+.footer-top p a:hover, .footer-bottom p a:hover {
+    color: #ff3000;
+    -webkit-transition: all .4s ease; -moz-transition: all .4s ease; transition: all .4s ease;
+}
+.mobfoot {display:none;}
+@media screen and (max-width: 1024px) {
+    .mainfoot, .moblowerfoot, .footer-bottom {display:none;}
+    .mobfoot {
+        width:100%;
+        display:block;
+        bottom:0;
+        left:0;
+        position:fixed;
+        z-index:999;
+    }
+    .icon {
+        width:30px;
+        height:30px;
+        fill:#fff;
+        display:inline-block;
+    }
+    .icontext {
+        color:#fff;
+        text-decoration:none;
+        text-align:center;
+        font-family: 'arial';
+        font-size:12px;
+        height:20px;
+        width:80px;
+        z-index:999;
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: -15px;
+        background-repeat:no-repeat;
+        display:block;
+    }
+    #callmob a, #mailmob a, #testmob a, #supportmob a{
+        width:25%;
+        height:80px;
+        background: transparent;
+        float:left;
+        border-top: solid 2px #fff;
+        border-bottom: solid 2px #fff;
+        /* border-left: solid 1px #fff;
+         border-right: solid 1px #fff;*/
+        padding:0px;
+        position:relative;
+    }
+    #callmob a:hover, #mailmob a:hover, #testmob a:hover, #supportmob a:hover {
+        -webkit-transition: all .4s ease; -moz-transition: all .4s ease; transition: all .4s ease;
+        opacity: 50%;
+        background-color: #ff3000;
+        cursor:pointer;
+    }
+    #callmob a .icon {
+        height:30px;
+        width:30px;
+        z-index:999;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: -15px;
+        background-repeat:no-repeat;
+        display:block;
+    }
+    #mailmob a .icon {
+        height:30px;
+        width:30px;
+        z-index:999;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: -15px;
+        background-repeat:no-repeat;
+        display:block;
+    }
+    #testmob a .icon {
+        height:30px;
+        width:30px;
+        z-index:999;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: -15px;
+        background-repeat:no-repeat;
+        display:block;
+    }
+    #supportmob a .icon {
+        height:30px;
+        width:30px;
+        z-index:999;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: -15px;
+        background-repeat:no-repeat;
+        display:block;
+        position: ;
+    }
+}
+
+
+
