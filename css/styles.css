@@ -124,7 +124,7 @@ body {
     width: 20%;
 }
 .carousel article img {
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 .carousel input[type=checkbox]:checked ~ .paineis {

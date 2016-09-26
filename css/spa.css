@@ -196,7 +196,7 @@ a {
 
 #home {
     width: 100%;
-    background: linear-gradient(to bottom, transparent, #394048), #ecf0f1 url("http://tortuguerotaxi.com/images/SUNSET_SMALL.jpg") no-repeat center;
+    background: linear-gradient(to bottom, transparent, #394048), #ecf0f1 url("http://tortuguerotaxi.com/images/RANA_SMALL.jpg") no-repeat center;
     background-size: cover;
     position: relative;
 }
@@ -296,7 +296,7 @@ a {
 
 #quote {
     width: 100%;
-    background: #ecf0f1 url("http://tortuguerotaxi.com/images/CANAL_SMALL.jpg") no-repeat center;
+    background: #ecf0f1 url("http://tortuguerotaxi.com/images/SUNSET_SMALL.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
