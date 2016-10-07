@@ -340,7 +340,15 @@ a {
 .avatar img {
     border-radius: 100%;
     width: 150px;
-    text-align: center;
+    text-align: left;
+    margin: 0 auto 20px;
+}
+
+.avatar1,
+.avatar1 img {
+    border-radius: 100%;
+    width: 150px;
+    text-align: right;
     margin: 0 auto 20px;
 }
 

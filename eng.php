@@ -1,10 +1,16 @@
 
 <html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/spa.css" rel="stylesheet">
     <link rel="stylesheet" href="http://icono-49d6.kxcdn.com/icono.min.css">
-    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/js.js"></script>
+    <meta name="Tortuguero taxi" content="Tortuguero boat, water taxi tortuguero, tortuguero boat tour, local tortuguero taxi"/>
+    <meta name="description" content="Taxi tortuguero is a family business in the town of tortuguero Costa Rica. We offer water taxi services
+     from la pavona to the town of tortuguero"/>
+    <meta name="keywords" content="Tortuguero taxi, tortuguero local transportation, transporte local tortuguero, water taxi tortuguero,
+    transporte tortuguero, tortuguero economico, local tortuguero, taxi tortuguero" />
     <title>Tortuguero WaterTaxi</title>
 </head>
 
